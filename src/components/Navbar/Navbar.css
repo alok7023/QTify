@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--css-primary);
+    background-color: var(--color-primary);
     width: 100%;
     height: 74px;
     display: flex;
@@ -10,8 +10,8 @@ nav {
   }
   
   .nav-btn {
-    background-color: var(--css-black);
-    color: var(--css-primary);
+    background-color: var(--color-black);
+    color: var(--color-primary);
     font-size: 18px;
     font-weight: 600;
     width: 170px;
@@ -23,5 +23,5 @@ nav {
   }
   
   .nav-btn:hover {
-    color: var(--css-white);
+    color: var(--color-white);
   }
