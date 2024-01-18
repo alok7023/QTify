@@ -7,9 +7,8 @@ export const fetchTopAlbums = async() => {
         const res = await axios.get(`${BACKEND_ENPOINT}/albums/top`);
         console.log(res.data)
         return res.data
-    }catch(error){
-        console.log(error)
-        return null
+    }catch(e){
+        console.error(e)
     }
 }
 export const fetchNewAlbums = async() => {
@@ -17,9 +16,8 @@ export const fetchNewAlbums = async() => {
         const res = await axios.get(`${BACKEND_ENPOINT}/albums/new`);
         return res.data
     }
-    catch(error){
-        console.log(error)
-        return null
+    catch(e){
+        console.error(e)
     }
 }
 
@@ -28,8 +26,18 @@ export const fetchSongs = async() => {
         const res = await axios.get(`${BACKEND_ENPOINT}/songs`);
         return res.data
     }
-    catch(error){
-        console.log(error)
-        return null
+    catch(e){
+        console.error(e)
+    }
+}
+
+
+export const fetchFilters = async() => {
+    try{
+        const res = await axios.get(`${BACKEND_ENPOINT}/genres`);
+        return res.data
+    }
+    catch(e){
+        console.error(e)
     }
 }
